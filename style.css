@@ -1150,12 +1150,37 @@ span{
     position: relative;
     background-color: #ffd2e4;
     transition: all 1s;
-    overflow: hidden;
+    overflow-x: auto;
+    padding-bottom: 20px;
 }
 .boxMail .boxMail-container:hover .card2-content{
     transform: translate(20px, 20px);
     box-shadow: -1px -1px 5px rgb(0, 0, 0, 0.4);
 }
+/* Toàn bộ thanh cuộn */
+::-webkit-scrollbar {
+    
+    width: 6px; /* Độ rộng của thanh cuộn */
+  }
+  
+  /* Track của thanh cuộn */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Màu nền của track */
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Thumb của thanh cuộn (phần di chuyển được) */
+  ::-webkit-scrollbar-thumb {
+    background: #c9c4c4; /* Màu của thumb */
+    border-radius: 10px;
+  }
+  
+  /* Khi hover vào thumb */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c9c4c4; /* Màu của thumb khi hover */
+  }
+  
 .boxMail .boxMail-container .card2 h3{
     font-family: 'Dancing Script', cursive;
     padding: 20px 0px 10px 60px;
